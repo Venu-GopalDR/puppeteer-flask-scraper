@@ -17,9 +17,9 @@ RUN npm install
 COPY scrape.js ./
 
 # Scrape URL is passed as ENV
-ARG SCRAPE_URL
-ENV SCRAPE_URL=${SCRAPE_URL}
-RUN node scrape.js
+#ARG SCRAPE_URL
+#ENV SCRAPE_URL=${SCRAPE_URL}
+#RUN node scrape.js
 
 # Stage 2: Python Server
 FROM python:3.10-slim
